@@ -1,13 +1,16 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 
 	for {
-
+		var help string
 		var a, b float64
 		var op string
+		fmt.Println(help, "For the help in this calculator use + to add, - to substract, * to multiply, / to divide.")
 
 		fmt.Print("Enter first number: ")
 		fmt.Scan(&a)
@@ -35,5 +38,4 @@ func main() {
 			fmt.Println("Invalid operator!")
 		}
 	}
-
 }
