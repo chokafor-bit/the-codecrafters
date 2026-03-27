@@ -3,32 +3,37 @@ package main
 import "fmt"
 
 func main() {
-	var a, b float64
-	var op string
 
-	fmt.Print("Enter first number: ")
-	fmt.Scan(&a)
+	for {
 
-	fmt.Print("Enter operator (+, -, *, /): ")
-	fmt.Scan(&op)
+		var a, b float64
+		var op string
 
-	fmt.Print("Enter second number: ")
-	fmt.Scan(&b)
+		fmt.Print("Enter first number: ")
+		fmt.Scan(&a)
 
-	switch op {
-	case "+":
-		fmt.Println("Answer:", a+b)
-	case "-":
-		fmt.Println("Answer:", a-b)
-	case "*":
-		fmt.Println("Answer:", a*b)
-	case "/":
-		if b == 0 {
-			fmt.Println("Can't divide by zero!")
-		} else {
-			fmt.Println("Answer:", a/b)
+		fmt.Print("Enter operator (+, -, *, /): ")
+		fmt.Scan(&op)
+
+		fmt.Print("Enter second number: ")
+		fmt.Scan(&b)
+
+		switch op {
+		case "+":
+			fmt.Println("Answer:", a+b)
+		case "-":
+			fmt.Println("Answer:", a-b)
+		case "*":
+			fmt.Println("Answer:", a*b)
+		case "/":
+			if b == 0 {
+				fmt.Println("Can't divide by zero!")
+			} else {
+				fmt.Println("Answer:", a/b)
+			}
+		default:
+			fmt.Println("Invalid operator!")
 		}
-	default:
-		fmt.Println("Invalid operator!")
 	}
+
 }
