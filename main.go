@@ -3,7 +3,15 @@ package main
 import (
 	"fmt"
 )
-
+func help(){
+	fmt.Println()
+	fmt.Println("Instructions")
+	fmt.Println("1. addition")
+	fmt.Println("2. substract")
+	fmt.Println("3. mutiplication")
+	fmt.Println("4. division")
+	
+}
 func main() {
 
 	for {
@@ -33,7 +41,10 @@ func main() {
 				fmt.Println("Can't divide by zero!")
 			} else {
 				fmt.Println("Answer:", a/b)
-			}
+			
+		case "help":
+				help()
+				continue
 		default:
 			fmt.Println("Invalid operator!")
 		}
