@@ -26,6 +26,8 @@ Answer: 15
 
 Supports +, -, *, and /. If you try to divide by zero it'll tell you off.
 
+And i added help function and goodbye massege if the user exit the calculator.
+
 ## Why I built this
 
 Just a beginner project to get comfortable with user input and switch statements in Go.
