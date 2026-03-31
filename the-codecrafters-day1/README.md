@@ -17,7 +17,7 @@ go run main.go
 
 It asks you for two numbers and an operator, then prints the answer. That's it.
 
-```
+
 Enter first number: 10
 Enter operator (+, -, *, /): +
 Enter second number: 5
